@@ -1,0 +1,79 @@
+
+<html>
+
+    <head>
+
+        <title>Formulario</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="description" content="Formulario"/>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="diseño.css">
+
+    </head>
+
+    <body id="body"> 
+        <form action="#" method="get" name="form" id="form">
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required/>
+            </p>
+
+            <p>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos" required/>
+
+            </p>
+   
+            <p>
+                <label for="rut">RUT: </label>
+                <input type="text" name="rut" id="rut" maxlength="9" required/>
+            </p>
+
+            <p>
+                <label for="email" >Email: </label>
+                <input type="email" name="email" id="email" required />
+            </p>
+           
+            <p>
+                <label for="telefono" >Telefono: </label>
+                <input type="tel" pattern="[0-9]{9}" name="telefono" id="telefono" placeholder="9XXXXXXXX" maxlength="9" required />
+            </p>
+
+            <p>
+                Seleccione 1 o más lenguajes de programación de su interés:<br>
+                <input type="checkbox" id="python"> Python
+                <input type="checkbox" id="java"> Java
+                <input type="checkbox" id="typescript"> TypeScript
+                <input type="checkbox" id="php"> PHP
+                <input type="checkbox" id="c"> C#
+                <input type="checkbox" id="cc"> C++
+            </p>
+
+            <p>
+                <label for="asunto" >Cuál es su nivel de conocimiento en programación? </label>
+                <input type="range" min="5" max="10" step="0.1" required>
+            </p>
+
+            <p>
+                Cuantos años de experiencia laboral tiene?<br>
+                <input type="radio" id="1" name="añosexperiencia" value="1"> 1<br>
+                <input type="radio" id="2" name="añosexperiencia" value="2"> 2<br>
+                <input type="radio" id="3" name="añosexperiencia" value="3"> 3<br>
+                <input type="radio" id="4" name="añosexperiencia" value="4"> 4<br>
+                <input type="radio" id="5" name="añosexperiencia" value="5"> 5 
+            </p>
+
+	        <textarea name="description" for="description" id="description" placeholder="Acerca de usted" required maxlength="300"></textarea>
+
+            <p>
+                <input type="button" value="Limpiar datos" id="limpiar">
+                <input type="submit" value="Enviar datos" id="enviar">
+            </p>
+        
+        </form>
+
+        <script src="test.js" async></script>
+
+    </body>
+</html>
